@@ -6,11 +6,11 @@ from spotipy.oauth2 import SpotifyOAuth
 from spotipy.exceptions import SpotifyException
 from flask import Flask, request, url_for, session, redirect
 
-openai.api_key = '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'
+openai.api_key = 'key'
 
 app = Flask(__name__)
 app.config['SESSION_COOKIE_NAME'] = 'Spotify Cookie'
-app.secret_key = '886a6305ad23464a85d49bfefc99e307'
+app.secret_key = 'key'
 TOKEN_INFO = 'token_info'
 
 @app.route('/')
